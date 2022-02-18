@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
@@ -183,6 +184,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
@@ -670,6 +672,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
@@ -738,6 +741,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_portrait_lighting_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting_c.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_preview_deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_preview_deflicker.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_supernight.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libbeauty_face_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbeauty_face_interface.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
@@ -778,6 +782,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libft2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libft2vendor.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpclient.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpdsp.so \
@@ -1012,6 +1019,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     com.qualcomm.qti.gpudrivers.sm6150.api30 \
     PowerOffAlarm \
+    android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
     manifest_android.hardware.drm@1.3-service.widevine \
